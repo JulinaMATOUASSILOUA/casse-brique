@@ -155,12 +155,6 @@ int main() {
             dirBalleX = - dirBalleX;
         if (posBalleY <= 0+BALLE_RAYON)
             dirBalleY = - dirBalleY;
-        Balle.mouvement ();
-
-        if (barre. boundingBox (). intersects (Balle. boundingBalle ()))
-            Balle.rebond ();
-        autre
-        balle.mouvement ();
 
 
                 // fin de la frame courante
