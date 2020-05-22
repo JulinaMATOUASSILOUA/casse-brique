@@ -11,7 +11,7 @@
 
 int main() {
     int const FENETRE_LARGEUR = 1000;
-    int const FENETRE_HAUTEUR = 80;
+   // int const FENETRE_HAUTEUR = 800;
     int const BALLE_RAYON = 10;
     int const VITESSE_BALLE = 5;
     float PAUSE =  10;
@@ -37,8 +37,6 @@ int main() {
      }
     sf::Sprite sprite(image);
     sprite.setTexture(image);
-    sprite.setTexture(image);
-    static sf::Image Image;
     // position
     sprite.setPosition(sf::Vector2f(60.f, 70.f)); // position absolue
     sprite.move(sf::Vector2f(10.f, 15.f)); // décalage relatif à la position actuelle
@@ -101,9 +99,9 @@ int main() {
           //  Balle.move(-1, 0);
         //} else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
           //  Balle.move(1, 0);
-        //}
+        //});
 
-        // effacement de la fenetre en noir
+        // effacement de la fenêtre en noir
         window.clear(sf::Color::Black);
         //dessine toutes les formes
         //window.draw(shape);
@@ -156,8 +154,7 @@ int main() {
         if (posBalleY <= 0+BALLE_RAYON)
             dirBalleY = - dirBalleY;
 
-
-                // fin de la frame courante
+               // fin de la frame courante
                 window.display();
         sf::sleep(sf::milliseconds(PAUSE));
                 window.clear();
